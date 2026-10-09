@@ -1686,18 +1686,90 @@
             [59, 'Mitali Sangha', 'South Kolkata; committee venue to be confirmed', 'South Kolkata', 'Exact address not verified', 'pandal']
         ];
 
+        const coordinateMetroRows = [
+            [1, 22.6015, 88.3658, 'Shyambazar / Shobhabazar-Sutanuti', 'Address listing; Approximate locality pin'],
+            [2, 22.5996, 88.3617, 'Shobhabazar-Sutanuti', 'Address listing; Approximate locality pin'],
+            [3, 22.5975, 88.3577, 'Shobhabazar-Sutanuti', 'Address listing; confirm committee entrance; Approximate locality pin'],
+            [4, 22.5992, 88.3690, 'Shyambazar', 'Locality address; confirm exact gate; Approximate locality pin'],
+            [5, 22.5972, 88.3708, 'Shyambazar', 'Address listing; Approximate locality pin'],
+            [6, 22.5939, 88.3840, 'Shyambazar / Belgachia', 'Street/locality; confirm exact venue; Approximate locality pin'],
+            [7, 22.5952, 88.3854, 'Belgachia', 'Address listing; Approximate locality pin'],
+            [8, 22.5889, 88.3708, 'Girish Park', 'Street/locality; confirm exact venue; Approximate locality pin'],
+            [9, 22.6080, 88.3830, 'Belgachia', 'Locality landmark; confirm exact address; Approximate locality pin'],
+            [10, 22.5885, 88.3739, 'Girish Park', 'Address listing; Approximate locality pin'],
+            [11, 22.5765, 88.3632, 'Central / MG Road', 'Park address; use main MG Road entrance; Approximate park pin'],
+            [12, 22.5726, 88.3639, 'Central / MG Road', 'Address listing; Approximate park pin'],
+            [13, 22.5897, 88.3693, 'Shyambazar / Girish Park', 'Park/locality address; Approximate park pin'],
+            [14, 22.6000, 88.3650, 'Shobhabazar-Sutanuti', 'Park/locality address; Approximate park pin'],
+            [15, 22.6000, 88.3670, 'Shyambazar', 'Area route marker; not a separate committee listing'],
+            [16, 22.5726, 88.3669, 'Central / Sealdah', 'Address listing; Approximate locality pin'],
+            [17, 22.5184, 88.3670, 'Gariahat', 'Address listing; Approximate locality pin'],
+            [18, 22.5224, 88.3600, 'Kalighat / Rabindra Sarobar', 'Business listing; verify committee gate; Approximate locality pin'],
+            [19, 22.5205, 88.3655, 'Kalighat', 'Locality address; verify exact entrance; Approximate locality pin'],
+            [20, 22.5273, 88.3514, 'Rabindra Sadan', 'Address listing; Approximate locality pin'],
+            [21, 22.5188, 88.3652, 'Gariahat', 'Locality address; confirm exact venue; Approximate locality pin'],
+            [22, 22.5172, 88.3539, 'Kalighat', 'Locality landmark; confirm exact venue; Approximate locality pin'],
+            [23, 22.5177, 88.3537, 'Kalighat', 'Park address; Approximate park pin'],
+            [24, 22.5160, 88.3469, 'Kalighat', 'Address listing; Approximate locality pin'],
+            [25, 22.5093, 88.3287, 'Rabindra Sarobar / Kalighat', 'Address listing; Approximate locality pin'],
+            [26, 22.5148, 88.3470, 'Kalighat', 'Address listing; Approximate locality pin'],
+            [27, 22.4660, 88.3765, 'Masterda Surya Sen / Gitanjali', 'Locality address; confirm exact gate; Approximate locality pin'],
+            [28, 22.5024, 88.3654, 'Rabindra Sarobar', 'Locality address; confirm block/road; Approximate locality pin'],
+            [29, 22.5170, 88.3532, 'Kalighat', 'Locality landmark; confirm exact venue; Approximate locality pin'],
+            [30, 22.5178, 88.3548, 'Kalighat', 'Locality landmark; confirm exact venue; Approximate locality pin'],
+            [31, 22.5030, 88.3695, 'Rabindra Sarobar', 'Locality address; confirm exact gate; Approximate locality pin'],
+            [32, 22.5140, 88.3460, 'Kalighat', 'Locality address; confirm exact venue; Approximate locality pin'],
+            [33, 22.4805, 88.3180, 'Netaji / Masterda Surya Sen (depending on exact venue)', 'Locality address; confirm exact road; Approximate locality pin'],
+            [34, 22.5130, 88.3935, 'Ruby / Hemanta Mukhopadhyay (distance depends on venue)', 'Locality address; confirm exact gate; Approximate locality pin'],
+            [35, 22.5135, 88.3945, 'Ruby / Hemanta Mukhopadhyay (distance depends on venue)', 'Locality address; confirm exact road; Approximate locality pin'],
+            [36, 22.5280, 88.3310, 'Jatin Das Park / Rabindra Sadan', 'Locality address; confirm exact venue; Approximate locality pin'],
+            [37, 22.4750, 88.3090, 'Behala Bazar / Sakherbazar (depending on venue)', 'Locality address; confirm exact road; Approximate locality pin'],
+            [38, 22.4970, 88.3190, 'Behala Bazar / Behala Chowrasta', 'Locality address; confirm exact venue; Approximate locality pin'],
+            [39, 22.4630, 88.3060, 'Joka (if accessible) / Behala Chowrasta', 'Locality address; confirm exact gate; Approximate locality pin'],
+            [40, 22.5105, 88.3212, 'New Alipore', 'Locality address; confirm exact road; Approximate locality pin'],
+            [41, 22.6082, 88.4038, 'Belgachia / Dum Dum (nearest depends on route)', 'Locality address; confirm exact gate; Approximate locality pin'],
+            [42, 22.6085, 88.4200, 'Dum Dum / Belgachia (longer last-mile)', 'Locality address; confirm exact road; Approximate locality pin'],
+            [43, 22.6098, 88.4205, 'Dum Dum / Belgachia (longer last-mile)', 'Locality address; confirm exact road; Approximate locality pin'],
+            [44, 22.6065, 88.4050, 'Belgachia / Dum Dum', 'Locality address; confirm exact venue; Approximate locality pin'],
+            [45, 22.5855, 88.4185, 'Karunamoyee / Central Park', 'Block address; Approximate block pin'],
+            [46, 22.5905, 88.4160, 'Karunamoyee / Central Park', 'Block address; Approximate block pin'],
+            [47, 22.5890, 88.4140, 'Karunamoyee / Central Park', 'Block address; Approximate block pin'],
+            [48, 22.5790, 88.4680, 'Salt Lake Sector V / Central Park (depends on venue)', 'Area only; confirm committee venue; Area-level pin; exact committee venue needed'],
+            [49, 22.5860, 88.4140, 'Karunamoyee / Central Park', 'Area only; confirm committee venue; Area-level pin; exact committee venue needed'],
+            [50, 22.5700, 88.3710, 'Sealdah', 'Official website gives public opening 15 Oct 2026; verify exact gate; Approximate locality pin; verify exact gate'],
+            [51, 22.5675, 88.3690, 'Sealdah', 'Landmark address; confirm exact venue; Approximate station-area pin'],
+            [52, 22.5370, 88.3210, 'Khidirpur (not a metro station) / Jatin Das Park', 'Locality address; confirm exact road; Approximate locality pin'],
+            [53, 22.5380, 88.3230, 'Khidirpur (not a metro station) / Jatin Das Park', 'Locality address; confirm exact venue; Approximate locality pin'],
+            [54, 22.5310, 88.3440, 'Netaji Bhavan', 'Locality address; confirm exact road; Approximate locality pin'],
+            [55, 22.5295, 88.3470, 'Netaji Bhavan', 'Locality address; confirm exact gate; Approximate locality pin'],
+            [56, 22.5140, 88.3500, 'Kalighat', 'Locality name only; verify exact address; Area-level pin; exact venue needed'],
+            [57, 22.4900, 88.3870, 'Masterda Surya Sen / Gitanjali', 'Locality address; confirm exact road; Approximate locality pin'],
+            [58, 22.4900, 88.3890, 'Masterda Surya Sen / Gitanjali', 'Road/locality address; confirm exact venue; Approximate locality pin'],
+            [59, 22.5050, 88.3600, 'Rabindra Sarobar / Kalighat', 'Exact address not verified; Area-level pin; exact venue needed']
+        ];
+
+        const coordinateMetroBySourceNumber = new Map(coordinateMetroRows.map(([sourceNumber, latitude, longitude, nearestMetro, sourceNote]) => [
+            sourceNumber,
+            { latitude, longitude, nearestMetro, sourceNote }
+        ]));
+
+        const coordinateVerificationCaveat = 'The coordinates and nearest-metro suggestions in the updated source are approximate neighbourhood-level research references, not surveyed pandal-gate locations. Verify each pin and route with an organizer listing or live map before using for turn-by-turn directions.';
+
         const nayerPallySourceUrl = 'https://nayerpallysealdahsarbojanindurgapuja.com/';
         const directoryReferences = [
             ['Kolkata Durga Puja Pandal Directory 2026', 'https://www.durgapujakolkata.in/paras?category=award-winner'],
             ['Pujo Map — Kolkata 2026', 'https://www.pujomap.com/'],
             ['KolkataKhoj — Pandal directory', 'https://kolkatakhoj.com/pandals/'],
             ['Nayer Pally Sealdah Sarbojanin', nayerPallySourceUrl],
-            ['Address reference for several central Kolkata pandals', 'https://www.zeotaxi.com/blog/kolkata-durga-puja-pandal-list/']
+            ['Address reference for several central Kolkata pandals', 'https://www.zeotaxi.com/blog/kolkata-durga-puja-pandal-list/'],
+            ['KolkataKhoj — Metro-based pandal hopping guide', 'https://kolkatakhoj.com/adda/durga-puja-pandal-hopping-by-metro/'],
+            ['Indian Express — 2026 station-wise pandal guide', 'https://bengali.indianexpress.com/west-bengal/kolkata-metro-puja-pandals-guide-station-wise-durga-puja-pandal-hopping-route-12628536']
         ];
 
         const pandalsData = directoryRows.map(([sourceNumber, name, address, area, sourceVerificationNote, entryType]) => {
             const needsAddressReview = /confirm|verify|locality|area only|landmark|not verified/i.test(sourceVerificationNote);
             const isNayerPally = sourceNumber === 50;
+            const locationReference = coordinateMetroBySourceNumber.get(sourceNumber);
             return {
                 id: entryType === 'area-route' ? 'area-route-baghbazar-shyambazar' : `pandal-${String(sourceNumber).padStart(2, '0')}`,
                 sourceNumber,
@@ -1707,13 +1779,17 @@
                 entryType,
                 latitude: null,
                 longitude: null,
-                coordinateStatus: entryType === 'pandal' ? 'unverified' : 'not-applicable',
+                approximateLatitude: locationReference?.latitude ?? null,
+                approximateLongitude: locationReference?.longitude ?? null,
+                coordinateStatus: locationReference ? 'approximate' : entryType === 'pandal' ? 'unverified' : 'not-applicable',
                 addressStatus: entryType === 'area-route' ? 'area-route' : needsAddressReview ? 'needs-verification' : 'source-listed-unverified',
-                sourceVerificationNote,
+                sourceVerificationNote: locationReference?.sourceNote ?? sourceVerificationNote,
+                coordinateSourceNote: locationReference ? coordinateVerificationCaveat : '',
                 openingDate: isNayerPally ? { inauguration: '2026-10-14', publicOpening: '2026-10-15' } : null,
                 openingDateStatus: isNayerPally ? 'source-reported' : 'unannounced',
                 openingDateNote: isNayerPally ? 'The source document reports inauguration on Chaturthi (14 October 2026) and public opening on Panchami (15 October 2026). Re-check the official site for changes; this is not a guarantee that the schedule remains current.' : '',
-                nearestMetro: null,
+                nearestMetro: locationReference?.nearestMetro ?? null,
+                nearestMetroStatus: locationReference ? 'approximate' : 'unannounced',
                 imageUrl: null,
                 tags: [],
                 searchAliases: [],
@@ -2347,6 +2423,8 @@
             const duplicateNames = [...nameGroups.values()].filter(group => group.length > 1).flat();
             const ambiguousRecords = pandalsData.filter(record => record.addressStatus === 'needs-verification' || record.entryType === 'area-route');
             const mapEligibleCount = pandalsData.filter(isMapEligible).length;
+            const approximateCoordinateCount = pandalsData.filter(record => record.coordinateStatus === 'approximate').length;
+            const approximateMetroCount = pandalsData.filter(record => record.nearestMetroStatus === 'approximate').length;
             const needsVerification = pandalsData.filter(record => record.entryType === 'area-route' || !isMapEligible(record) || record.addressStatus === 'needs-verification');
             const importedCount = pandalsData.length;
             const report = document.getElementById('completenessReport');
@@ -2363,8 +2441,10 @@
                     <p>Duplicate source numbers: ${duplicateRows.length ? duplicateRows.join(', ') : 'None'}. Duplicate committee names: ${duplicateNameList}.</p>
                     <p>Location-ambiguous entries requiring follow-up: ${ambiguousRecords.length}. ${ambiguousList}.</p>
                     <p>Map-eligible committee records: ${mapEligibleCount}. Records requiring address or coordinate verification: ${needsVerification.length} (${pandalsData.filter(record => record.entryType === 'pandal' && !isMapEligible(record)).length} pandals and ${pandalsData.filter(record => record.entryType === 'area-route').length} area route).</p>
+                    <p>Source-provided approximate coordinate references: ${approximateCoordinateCount} (${pandalsData.filter(record => record.entryType === 'pandal' && record.coordinateStatus === 'approximate').length} pandals and ${pandalsData.filter(record => record.entryType === 'area-route' && record.coordinateStatus === 'approximate').length} area route). Approximate nearest-metro suggestions: ${approximateMetroCount}. These are not exact committee pins and are excluded from map markers and mapped directions.</p>
                     <p>Source note: the document headline says “55 destinations,” while its numbered table has 59 rows. All 59 numbered rows are represented; row 15 is an area route, not a separate committee.</p>
-                    <p>Coordinates, metro stops, themes, images, and individual opening dates remain unfilled unless explicitly source-reported. The source warns that addresses may be locality-level leads and exact committee entrances need confirmation.</p>
+                    <p>${escapeHtml(coordinateVerificationCaveat)} The source also warns that some addresses are locality-level leads. Nearest-metro suggestions are approximate and may depend on the final venue or route; one source entry explicitly says Khidirpur is not a metro station.</p>
+                    <p>The source does not provide verified themes, images, or individual opening dates beyond the Nayer Pally note.</p>
                     <p>Nayer Pally's 14/15 October 2026 schedule is source-reported, not independently confirmed.</p>
                     <ul>${directoryReferences.map(([label, url]) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a></li>`).join('')}</ul>
                 `;
@@ -2372,7 +2452,7 @@
 
             const visibleMapCount = visibleDirectoryRecords.filter(isMapEligible).length;
             const mapCount = document.getElementById('mapCount');
-            if (mapCount) mapCount.textContent = `${visibleMapCount} verified map pins in current results · ${mapEligibleCount} eligible in directory`;
+            if (mapCount) mapCount.textContent = `${visibleMapCount} verified map pins in current results · ${mapEligibleCount} eligible · ${approximateCoordinateCount} approximate references not plotted`;
         }
 
         function initializeApp() {
@@ -2487,7 +2567,7 @@
             const searchTerm = normalizeSearchText(document.getElementById('searchInput')?.value || '');
             visibleDirectoryRecords = pandalsData.filter(record => {
                 const searchable = normalizeSearchText([
-                    record.name, record.address, record.area, ...record.searchAliases, ...record.tags
+                    record.name, record.address, record.area, record.nearestMetro, ...record.searchAliases, ...record.tags
                 ].join(' '));
                 const matchesSearch = !searchTerm || searchable.includes(searchTerm);
                 const matchesArea = activeAreaFilters.size === 0 || [...activeAreaFilters].some(area => areaMatches(record.area, area));
@@ -2497,8 +2577,9 @@
 
             renderPandalCards(visibleDirectoryRecords);
             const eligibleCount = visibleDirectoryRecords.filter(isMapEligible).length;
+            const approximateCount = visibleDirectoryRecords.filter(record => record.entryType === 'pandal' && record.coordinateStatus === 'approximate').length;
             const summary = document.getElementById('resultsSummary');
-            if (summary) summary.textContent = `Showing ${visibleDirectoryRecords.length} of ${pandalsData.length} source entries · ${eligibleCount} have verified map pins`;
+            if (summary) summary.textContent = `Showing ${visibleDirectoryRecords.length} of ${pandalsData.length} source entries · ${eligibleCount} verified map pins · ${approximateCount} approximate locations not pinned`;
             renderDirectoryCompleteness();
             updateMapFilters(visibleDirectoryRecords);
         }
@@ -2513,13 +2594,14 @@
 
             grid.innerHTML = records.map(record => {
                 const entryLabel = record.entryType === 'area-route' ? 'Route guide · not a committee' : 'Pandal';
-                const locationLabel = isMapEligible(record) ? 'Verified map pin' : 'Location needs verification';
+                const locationLabel = isMapEligible(record) ? 'Verified map pin' : record.coordinateStatus === 'approximate' ? 'Approximate location · not pinned' : 'Location needs verification';
+                const metroLabel = record.nearestMetro ? `<br><span class="text-muted">Nearest metro (approx.): ${escapeHtml(record.nearestMetro)}</span>` : '';
                 return `
                     <article class="pandal-card${selectedPandalId === record.id ? ' is-selected' : ''}">
                         <button class="card-main" type="button" data-action="select-card" data-id="${escapeHtml(record.id)}" aria-label="View details for ${escapeHtml(record.name)}">
                             <span class="card-number">${String(record.sourceNumber).padStart(2, '0')}</span>
                             <span class="card-name">${escapeHtml(record.name)}</span>
-                            <span class="card-address">${escapeHtml(record.area)}<br>${escapeHtml(record.address)}</span>
+                            <span class="card-address">${escapeHtml(record.area)}<br>${escapeHtml(record.address)}${metroLabel}</span>
                             <span class="card-badges"><span class="status-badge">${escapeHtml(entryLabel)}</span><span class="status-badge">${escapeHtml(locationLabel)}</span></span>
                         </button>
                         <button class="pandal-favorite-btn" type="button" data-action="favorite" data-id="${escapeHtml(record.id)}" aria-label="${favorites.has(record.id) ? 'Remove from' : 'Save to'} favorites" aria-pressed="${favorites.has(record.id)}" title="${favorites.has(record.id) ? 'Remove from favorites' : 'Save to favorites'}">
@@ -2578,8 +2660,19 @@
                 ? `<div class="details-field"><dt>Opening-date note</dt><dd>${escapeHtml(record.openingDateNote)}</dd></div>`
                 : '<div class="details-field"><dt>Opening date</dt><dd>Unannounced in the source directory.</dd></div>';
             const nearestMetroHtml = record.nearestMetro
-                ? `<div class="details-field"><dt>Nearest metro</dt><dd>${escapeHtml(record.nearestMetro)}</dd></div>`
+                ? `<div class="details-field"><dt>Nearest metro suggestion (approximate)</dt><dd>${escapeHtml(record.nearestMetro)}</dd></div>`
                 : '';
+            const approximateCoordinatesHtml = record.coordinateStatus === 'approximate' &&
+                Number.isFinite(record.approximateLatitude) && Number.isFinite(record.approximateLongitude)
+                ? `<div class="details-field"><dt>Approximate source coordinates</dt><dd>${record.approximateLatitude.toFixed(4)}, ${record.approximateLongitude.toFixed(4)}. Research reference only; not an exact committee entrance. ${escapeHtml(record.coordinateSourceNote)}</dd></div>`
+                : '';
+            const mapPinStatus = isMapEligible(record)
+                ? 'Verified committee coordinates available.'
+                : routeGuide
+                    ? 'Not applicable: this is an area route, not a separate committee.'
+                    : record.coordinateStatus === 'approximate'
+                        ? 'The source provides an approximate neighbourhood point only. No committee pin has been placed; exact gate verification is still needed.'
+                        : 'Location needs verification. No pin has been placed.';
             const sourceLink = record.sourceUrl
                 ? `<a class="btn-secondary" href="${escapeHtml(record.sourceUrl)}" target="_blank" rel="noopener noreferrer">Open source website</a>`
                 : '';
@@ -2597,8 +2690,8 @@
                     <div class="details-field"><dt>Area in source</dt><dd>${escapeHtml(record.area)}</dd></div>
                     <div class="details-field"><dt>Supplied address</dt><dd>${escapeHtml(record.address)}</dd></div>
                     <div class="details-field"><dt>Address status</dt><dd>${escapeHtml(addressLabel)} Source note: ${escapeHtml(record.sourceVerificationNote)}</dd></div>
-                    <div class="details-field"><dt>Map pin</dt><dd>${isMapEligible(record) ? 'Verified coordinates available.' : routeGuide ? 'Not applicable: this is an area route, not a separate committee.' : 'Location needs verification. No pin has been placed.'}</dd></div>
-                    ${dateHtml}${nearestMetroHtml}
+                    <div class="details-field"><dt>Map pin</dt><dd>${escapeHtml(mapPinStatus)}</dd></div>
+                    ${approximateCoordinatesHtml}${dateHtml}${nearestMetroHtml}
                     ${record.tags.length ? `<div class="details-field"><dt>Tags</dt><dd>${record.tags.map(escapeHtml).join(', ')}</dd></div>` : ''}
                     ${record.lastVerifiedAt ? `<div class="details-field"><dt>Last verified</dt><dd>${escapeHtml(record.lastVerifiedAt)}</dd></div>` : ''}
                 </dl>
@@ -2722,12 +2815,14 @@
             const status = document.getElementById('mapStatus');
             const eligibleTotal = pandalsData.filter(isMapEligible).length;
             const eligibleVisible = visibleDirectoryRecords.filter(isMapEligible).length;
+            const approximateTotal = pandalsData.filter(record => record.entryType === 'pandal' && record.coordinateStatus === 'approximate').length;
+            const approximateVisible = visibleDirectoryRecords.filter(record => record.entryType === 'pandal' && record.coordinateStatus === 'approximate').length;
             const count = document.getElementById('mapCount');
-            if (count) count.textContent = `${eligibleVisible} verified map pins in current results · ${eligibleTotal} eligible in directory`;
+            if (count) count.textContent = `${eligibleVisible} verified pins in current results · ${eligibleTotal} eligible · ${approximateVisible}/${approximateTotal} approximate references not plotted`;
             if (!status) return;
             const pinMessage = eligibleTotal
                 ? `${eligibleVisible} verified committee pins are visible; ${eligibleTotal} are eligible in the complete directory.`
-                : 'No committee has a sufficiently verified exact pin yet. The map shows only a Kolkata overview; unverified entries remain in the directory.';
+                : `No exact committee-gate pins are verified. ${approximateVisible}/${approximateTotal} approximate source coordinate references are deliberately not plotted; use the directory's approximate address search while exact entrances remain unverified.`;
             const tileMessage = mapTileError
                 ? ' OpenStreetMap basemap tiles failed to load; check network or provider status. The directory is still available.'
                 : '';
@@ -2739,7 +2834,7 @@
             if (!mapInstance) return;
             const markers = [...mapMarkers.values()];
             if (!markers.length) {
-                document.getElementById('mapStatus').textContent = 'No verified pins match the current filters. No approximate markers have been added.';
+                document.getElementById('mapStatus').textContent = 'No verified pins match the current filters. Approximate source coordinates are not plotted as exact committee locations.';
                 return;
             }
             mapInstance.fitBounds(L.featureGroup(markers).getBounds().pad(0.15), { maxZoom: 15 });
